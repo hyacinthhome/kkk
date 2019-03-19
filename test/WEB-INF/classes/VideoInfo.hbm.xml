@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.east.zc" >
+
+    <!-- 属性table 表示在数据库中的表名  -->
+    <class name="VideoInfo" table="VideoInfos" >
+        <id name="id" column="id" type="int">
+            <!-- 值native表示会根据数据库来创建不同的主键生成策略 -->
+            <generator class="native"></generator>
+        </id>
+        <property name="FileId" column="FileId" type="string"></property>
+        <property name="Name" column="Name" type="string"></property>
+        <property name="CreateTime" column="CreateTime" type="string"></property>
+        <property name="UpdateTime" column="UpdateTime" type="string"></property>
+        <property name="MediaUrl" column="MediaUrl" type="string"></property>
+        <property name="Vid" column="Vid" type="string"></property>
+
+    </class>
+</hibernate-mapping>
